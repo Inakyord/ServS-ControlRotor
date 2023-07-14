@@ -1,0 +1,56 @@
+/* 
+  Elevación 58 segundos --> 180° ~ 1:01s
+  3.1° cada segundo
+  1° cada 0.32 s
+
+  Azimuth   53 segundos --> 360° ~ 54s
+  6.8° cada segundo
+  1° cada 0.15 s
+*/
+
+/* 
+PINES cable utilizado:
+  8 - GND
+  7 - 15.3 V
+  6 - Posición Azimuth
+  5 - Down
+  4 - Left
+  3 - Up
+  2 - Right
+  1 - Posición Elevación
+*/
+
+/*
+PINES diseño TARJETA 8:
+  1 - Elevación
+  2 - Right
+  3 - Up
+  4 - Left
+  5 - Down
+  6 - Azimuth
+  7 - 15 V
+  8 - GND
+  9 - Sin conexión
+*/
+
+/*
+COMANDOS:
+O           - Offset calibration for internal AZ trimmer potentiometer
+O2          - Offset calibration for internal EL trimmer potentiometer
+F           - Full Scale calibration AZ
+F2          - Full Scale calibration EL
+R           - Start turning rotator to the right
+U           - Start turning rotaror up
+L           - Start turning rotator to the left
+D           - Start turning rotator down
+A           - Stop Azimuth rotation
+E           - Stop Elevation rotation
+S           - Stop/Cancel current command before completion
+C           - Return current Azimuth angle in the form "+0nnn" degrees
+B           - Return current Elevation angle in the form "+0nnn" degrees
+C2          - Return azimuth and elevation: "+0aaa +0eee"
+Xn          - Select azimuth rotator turning speed, where n=1 (slowest) to n=4 (fastest)
+Maaa        - Turn rotator to aaa degrees azimuth 
+Msss aaa bbb ccc - Turn in time intervals and a list of values.
+Waaa eee    - Turns to aaa degrees azimuth and eee elevation.
+*/
